@@ -6,7 +6,8 @@ public class Test3 {
 		
 		byte x=127;
 		x++;
-//		x++;
+		x++;
+		x++;
 		System.out.println(x);
 	}
 
