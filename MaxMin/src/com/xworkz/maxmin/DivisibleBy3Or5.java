@@ -9,7 +9,7 @@ public class DivisibleBy3Or5 {
         System.out.print("Enter a number (N): ");
         int n = scanner.nextInt();
 
-        System.out.println("Numbers from 1 to " + n + " divisible by 3 or 5:");
+//        System.out.println("Numbers from 1 to " + n + " divisible by 3 or 5:");
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 || i % 5 == 0) {
                 System.out.print(i + " ");

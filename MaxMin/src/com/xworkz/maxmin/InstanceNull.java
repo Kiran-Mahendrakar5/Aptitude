@@ -3,7 +3,7 @@ package com.xworkz.maxmin;
 public class InstanceNull {
 
     public static void main(String[] args) {
-       Object obj = "kiran";
+       Object obj = null;
        
        if(obj!=null &&obj instanceof String) {
     	   String stg = (String) obj;

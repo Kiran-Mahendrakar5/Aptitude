@@ -13,11 +13,11 @@ public class IntersectionTwoArray {
         List<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<>();
 
-        for (int num : array1) {
+        for (Integer num : array1) {
             list1.add(num);
         }
 
-        for (int num : array2) {
+        for (Integer num : array2) {
             list2.add(num);
         }
 
@@ -31,7 +31,7 @@ public class IntersectionTwoArray {
         }
 
         // Print the intersection
-        System.out.print("Intersection of the two arrays: ");
+//        System.out.print("Intersection of the two arrays: ");
         System.out.println(Arrays.toString(intersection));
     }
 }

@@ -9,7 +9,7 @@ public class Isomorphic {
             return false;
         }
 
-        Map<Character, Character> map = new HashMap<>();
+//        Map<Character, Character> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             char a = s.charAt(i);
             char b = t.charAt(i);

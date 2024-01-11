@@ -17,16 +17,16 @@ public class RemoveElementsArray {
 	}
 	
 	public static int[] removeArray(int[]ref1,int ref2) {
-		int [] array1 = new int[ref1.length-1];
+		int [] ref3 = new int[ref1.length-1];
 		int index=0;
 		for(int i=0;i<ref1.length;i++) {
 			if(ref1[i]!=ref2) {
-				array1[index]=ref1[i];
+				ref3[index]=ref1[i];
 				index++;
 				
 			}
 		}
-		return array1;
+		return ref3;
 		
 	}
 

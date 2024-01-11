@@ -1,21 +1,19 @@
 package com.xworkz.codeninja;
 
 public class RemoveDuplicates {
-    public int removeDuplicates(int[] nums) {
-//        if (nums == null || nums.length == 0) {
-//            return 0;
-//        }
+    public int removeDuplicates(int[] Dup) {
 
-        int uniqueIndex = 0;
 
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] != nums[uniqueIndex]) {
+        int zero = 0;
+
+        for (int i = 1; i < Dup.length; i++) {
+            if (Dup[i] != Dup[zero]) {
                 // Move the unique element to the next position
-                nums[++uniqueIndex] = nums[i];
+            	Dup[++zero] = Dup[i];
             }
         }
 
-        return uniqueIndex + 1;
+        return zero + 1;
     }
 
     public static void main(String[] args) {

@@ -29,10 +29,10 @@ public class StringRotationChecker {
         }
 
         // Concatenate str1 with itself
-        String concatenatedString = str1 + str1;
+        String third = str1 + str1;
 
         // Check if str2 is a substring of the concatenated string
-        return concatenatedString.contains(str2);
+        return third.contains(str2);
     }
 }
 

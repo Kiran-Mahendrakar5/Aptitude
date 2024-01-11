@@ -22,6 +22,7 @@ public class AnagramCheck {
         String str2 = "silent";
 
         System.out.println("Are '" + str1 + "' and '" + str2 + "' anagrams? " + areAnagrams(str1, str2));
+        System.out.println(str1+str2+areAnagrams(str1, str2));
     }
 }
 

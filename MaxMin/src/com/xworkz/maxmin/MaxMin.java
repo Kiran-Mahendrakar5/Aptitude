@@ -5,8 +5,9 @@ public class MaxMin {
 	public static void main(String[] args) {
 		
 		int[] arr= {1,3,5,7,9,8};
-		 int ref1 = findmax(arr);
-		 int ref2 = findmin(arr);
+		 int ref1 = findmin(arr);
+		 int ref2 = findmax(arr);
+		
 		 
 		 System.out.println(ref1);
 		 System.out.println(ref2);
