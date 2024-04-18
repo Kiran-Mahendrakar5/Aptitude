@@ -99,10 +99,19 @@ public class BottleDto implements Serializable,Comparable<BottleDto>{
 	public void setManufactureDate(int manufactureDate) {
 		this.manufactureDate = manufactureDate;
 	}
+	//acending order
+//	@Override
+//	public int compareTo(BottleDto o) {
+//		return Integer.compare(this.expireDate, o.expireDate);
+//	}
+	
+	//decending order
 	@Override
 	public int compareTo(BottleDto o) {
-		return Integer.compare(this.expireDate, o.expireDate);
+	    return Integer.compare(o.expireDate, this.expireDate);
 	}
+	
+
 	
 	
 	
