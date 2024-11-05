@@ -13,13 +13,12 @@ public class OppositeStringOne {
 				news+=(char)(ch +('a'-'A'));
 			}else if(ch>='a'&&ch<'z') {
 				news+=(char)(ch -('a'-'A'));
-			}else {
-				news+=ch;
 			}
 
 		}
 		System.out.println(news);
 		
 	}
+
 
 }

@@ -7,24 +7,22 @@ public class Fibonacci {
 	public static void main(String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter Number:--");
-		int n = scanner.nextInt();
-		System.out.println("Fibonacci Series up to " + n + " terms:");
-		fibonacci(n);
+		System.out.println("Enter Num ==");
+		int num = scanner.nextInt();
+		System.out.println(num);
+		fib(num);
 		scanner.close();
+
 	}
 
-	public static void fibonacci(int n) {
-		int firstTerm = 0, secondTerm = 1;
-		for (int i = 0; i < n; i++) {
-			System.out.println(firstTerm + " ");
-
-			int nextterm = firstTerm + secondTerm;
-			firstTerm = secondTerm;//1
-			secondTerm = nextterm;//1
-
+	public static void fib(int num) {
+		int first = 0, sec = 1;
+		for (int i = 0; i <= num; i++) {
+			System.out.println(first);
+			int next = first + sec;
+			first = sec;
+			sec = next;
 		}
 
 	}
-
 }

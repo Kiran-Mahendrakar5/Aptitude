@@ -1,29 +1,28 @@
 package com.xworkz.huckerrank;
 
 public class Vowel {
-	
-	public static void main(String[] args) {
-		
-		System.out.println(stringContainVowel("TV"));
-	}
-	
-	public static boolean stringContainVowel(String tv) {
-		
-		char[] alphabets = {'a','e','i','u','o'};
-		for(int i=0;i<tv.length();i++) {
-		char ch = 	tv.charAt(i);
-		for(int j=0;j<alphabets.length;j++) {
-			if(ch==alphabets[j]) {
-				return true;
-			}
-		}
-		}
-		
-		return false;
-		
-		
-		
-		
-	}
 
+   public static void main (String[] args) {
+        stringContainVowels("kiran");
+       
+    }
+
+    public static void stringContainVowels(String tv) {
+        char[] alpha = {'a', 'e', 'i', 'o', 'u'};
+       
+
+        for (int i = 0; i < tv.length(); i++) {
+            char ch = tv.charAt(i);
+            for (int j = 0; j < alpha.length; j++) {
+                if (ch == alpha[j]) {
+                    System.out.println(ch+" ");
+                    break;
+                    
+                }
+            }
+        }
+		
+
+    
+    }
 }

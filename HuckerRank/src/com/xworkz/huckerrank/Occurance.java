@@ -1,4 +1,4 @@
-package com.xworkz.huckerrank;
+ package com.xworkz.huckerrank;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -8,22 +8,25 @@ import sun.applet.Main;
 
 public class Occurance {
 
-	public static void occurance(int[] a) {
+	public static void occurance(int[] num) {
+
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-		for (int n : a) {
-			if (map.containsKey(n)) {
-				map.put(n, map.get(n) + 1);
+		for (Integer fr : num) {
+			if (map.containsKey(fr)) {
+				map.put(fr, map.get(fr) + 1);
 			} else {
-				map.put(n, 1);
+				map.put(fr, 1);
 			}
 		}
-		for(Map.Entry<Integer, Integer> m:map.entrySet()) {
-			System.out.println(m.getKey()+";"+m.getValue());
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			System.out.println(entry.getKey() + ":" + entry.getValue());
 		}
+
 	}
+	
 	public static void main(String[] args) {
 		
-		int [] num = {1,2,3,4,5,6,1,2,3,4};
+		int [] num = {1,1,1,2,3,4,5,6,8};
 		occurance(num);
 	}
 

@@ -5,15 +5,12 @@ public class AtmPin {
 	
 	public static void main(String[] args) {
 		
-		String pin = "yipuo";
+		String pin = "poiuy";
 		
-		
-	
-		
-		if(pin=="yipuo") {
+		if(pin=="poiuy") {
 			System.out.println("correct");
 		}else {
-			System.out.println("wrong pin");
+			System.out.println("no");
 		}
 	}
 

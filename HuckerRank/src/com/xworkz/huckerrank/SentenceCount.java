@@ -1,28 +1,34 @@
 package com.xworkz.huckerrank;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class SentenceCount {
 
-	// hai good morning good good ,good
-	public static int sentenceCount(String target, String word) {
-//String[] words=     //good.split(" ");
-		String[] words = target.split(" ");
+    public static void occurrence(String input) {
+        // Split the input string into words
+        String[] words = input.split(" ");
 
-		int count = 0;
-//for(String w:good)
-		for (String w : words) { // for (int i = 0; i < words.length; i++) {
-// good.equals(Good morning All)
-			if (w.equals(word)) { // if (words[i].equals(word)) {
-				count++;
+        // Using LinkedHashMap to maintain the insertion order of words
+        Map<String, Integer> wordCountMap = new LinkedHashMap<>();
 
-			}
-		}
-		return count;
+        // Count occurrences of each word
+        for (String word : words) {
+            if (wordCountMap.containsKey(word)) {
+                wordCountMap.put(word, wordCountMap.get(word) + 1);
+            } else {
+                wordCountMap.put(word, 1);
+            }
+        }
 
-	}
+        // Print the occurrences
+        for (Map.Entry<String, Integer> entry : wordCountMap.entrySet()) {
+            System.out.println(entry.getKey() + " = " + entry.getValue());
+        }
+    }
 
-	public static void main(String[] args) {
-
-		int result = sentenceCount("hai good morning good good", "good");
-		System.out.println(result);
-	}
+    public static void main(String[] args) {
+        String input = "hai good morning morning good good";
+        occurrence(input);
+    }
 }

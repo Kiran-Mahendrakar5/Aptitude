@@ -1,16 +1,22 @@
 package com.xworkz.huckerrank;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArrayEqual {
 
 	public static void main(String[] args) {
 
-		int[] num = { 1, 2, 3, 4, 5 };
-		int[] num1 = { 1, 2, 3, 4, 5 };
-		boolean result = Arrays.equals(num, num1);
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter String:--");
+		String word = scanner.nextLine();
+		String result = "";
+		for(int i=0;i<word.length();i++){
+			if(i!=0&&i==5) {
+				result+=" ";
+			}
+			result+=word.charAt(i);
+		}
 		System.out.println(result);
-
+		scanner.close();
 	}
-
 }

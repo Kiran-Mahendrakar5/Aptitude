@@ -1,38 +1,29 @@
 package com.xworkz.huckerrank;
 
-
-
 public class Patterns {
     public static void main(String[] args) {
-        String message = "Good Morning";
-        printDiamondPattern(message);
-    }
+        int n =5; // Number of rows in the top half of the diamond
 
-    private static void printDiamondPattern(String message) {
-        int length = message.length();
-        int mid = length / 2;
-
-        // Upper half
-        for (int i = 0; i <= mid; i++) {
-            for (int j = mid; j > i; j--) {
+        // Top half of the diamond
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) {
                 System.out.print(" ");
             }
-            for (int k = 0; k <= i * 2; k++) {
-                System.out.print(message.charAt(Math.min(k, length - 1)));
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
 
-        // Lower half
-        for (int i = mid - 1; i >= 0; i--) {
-            for (int j = mid; j > i; j--) {
+        // Bottom half of the diamond
+        for (int i = n - 1; i >= 1; i--) {
+            for (int j = n; j > i; j--) {
                 System.out.print(" ");
             }
-            for (int k = 0; k <= i * 2; k++) {
-                System.out.print(message.charAt(Math.min(k, length - 1)));
+            for (int k = 1; k <= (2 * i - 1); k++) {
+                System.out.print("*");
             }
             System.out.println();
         }
     }
 }
-
